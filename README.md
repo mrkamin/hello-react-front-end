@@ -30,6 +30,12 @@
 
 > "this app is based on react for frontend.
 
+<summary>Backend Api Link</summary>
+  <ul>
+    <li><a href="http://localhost:3000/greetings/random">Rails as Backend - API's used</a></li>
+  </ul>
+</details>
+
 ## 🛠 Built With <a name="built-with"></a>
 
 ### Tech Stack <a name="tech-stack"></a>
