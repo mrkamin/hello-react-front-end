@@ -29,12 +29,12 @@
 
 <summary>Backend Api Link</summary>
   <ul>
-    <li><a href="http://localhost:3000/greetings/random">Rails as Backend - API's used</a></li>
+    <li><a href="http://localhost:3000/api/greeting">Rails as Backend - API's used</a></li>
   </ul>
 </details>
 <summary>Backend PR Link</summary>
   <ul>
-    <li><a href="https://github.com/mrkamin/Hello-Rails-backend/pull/1">Rails as Backend - PR Link</a></li>
+    <li><a href="https://github.com/mrkamin/Hello-Rails-Back-End/pull/1">Rails as Backend - PR Link</a></li>
   </ul>
 </details>
 
