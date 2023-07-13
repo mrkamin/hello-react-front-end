@@ -1,17 +1,24 @@
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { fetchGreeting } from '../redux/greeting/greetingSlice';
+import { getRandomGreeting } from '../redux/greetings/greetingsSlice';
 
-export default function Greeting() {
+const Greeting = () => {
   const dispatch = useDispatch();
-
-  const { message, isLoading } = useSelector((store) => store.greeting);
+  const greeting = useSelector((state) => state.greetings.greeting);
 
   useEffect(() => {
-    dispatch(fetchGreeting());
-  }, []);
+    dispatch(getRandomGreeting());
+  }, [dispatch]);
 
-  if (isLoading) { return <h1>Hello Microverse</h1>; }
-
-  return <h1>{message}</h1>;
-}
+  if (greeting) {
+    return (
+      <div>
+        <h1>{greeting.message}</h1>
+      </div>
+    );
+  }
+  return (
+    <h1>No message saved...</h1>
+  );
+};
+export default Greeting;
